@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Rafther0112/FFL_Research/blob/main/paper/FFL_paper.pdf">
+  <a href="https://github.com/Rafther0112/FFL_Research/blob/main/FFL_Paper.pdf">
     <img src="https://img.shields.io/badge/📄%20Paper-PDF-b31b1b?style=for-the-badge" alt="Read the paper (PDF)">
   </a>
-  <a href="https://github.com/Rafther0112/FFL_Research/raw/main/paper/FFL_paper.pdf">
+  <a href="https://github.com/Rafther0112/FFL_Research/raw/main/FFL_Paper.pdf">
     <img src="https://img.shields.io/badge/⬇%20Download-PDF-4c566a?style=for-the-badge" alt="Download the PDF">
   </a>
   <a href="#citation">
@@ -23,6 +23,27 @@
   <img src="https://img.shields.io/badge/Numba-accelerated-00a3e0" alt="Numba">
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License">
   <img src="https://img.shields.io/badge/Reproducible-fixed%20seeds-success" alt="Reproducible">
+</p>
+
+---
+
+<p align="center">
+  <img src="FFL_Overview.png" width="92%"
+       alt="(a) A gene transcription regulatory network, with one feed-forward loop highlighted. (b) An isolated FFL with input X, intermediate Y and output Z. (c) The eight structural variants: coherent C1–C4 and incoherent I1–I4.">
+</p>
+
+<p align="center">
+  <sub>
+    <b>(a)</b> A gene transcription regulatory network: nodes are genes, directed edges are
+    transcriptional regulations, and a few hubs act as master regulators of many targets; one
+    feed-forward loop is highlighted. <b>(b)</b> An isolated FFL with input <i>X</i>, intermediate
+    <i>Y</i> and output <i>Z</i>, with the environment modulating the transcription rate
+    <i>K<sub>X</sub></i> of the upstream gene. <b>(c)</b> The eight structural variants obtained by
+    assigning each edge an activation (→) or a repression (⊣): coherent (C1–C4) when the sign of
+    the direct edge <i>X</i>→<i>Z</i> matches the product of the signs along
+    <i>X</i>→<i>Y</i>→<i>Z</i>, incoherent (I1–I4) otherwise. Despite this structural symmetry, the
+    natural census of the eight variants is highly asymmetric.
+  </sub>
 </p>
 
 ---
@@ -80,8 +101,8 @@ Boolean limits.
 
 ```text
 FFL_Research/
-├── paper/
-│   └── FFL_paper.pdf            # the manuscript (author's version)
+├── FFL_Paper.pdf                # the manuscript (author's version)
+├── FFL_Overview.png             # Fig. 1 of the paper
 ├── src/ffl/
 │   ├── gates.py                 # Hill functions + the ten logics, Eqs. (2)–(14)
 │   ├── model.py                 # the six-equation CLE system, Eq. (1); the 8 variants
@@ -241,7 +262,7 @@ And the software:
 
 ## License
 
-Code released under the [MIT License](LICENSE). The manuscript in `paper/` is the authors' own
+Code released under the [MIT License](LICENSE). The manuscript `FFL_Paper.pdf` is the authors' own
 version and is shared for academic use.
 
 ## Contact
